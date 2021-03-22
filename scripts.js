@@ -225,7 +225,7 @@ const fillJobs = () => {
     <span class="s3">.</span>
   </h1>
   `;
-  const URL = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json`;
+  const URL = `https://jobs.github.com/positions.json`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => {
@@ -263,7 +263,7 @@ const searchByCity = () => {
   </h1>
   `;
   let city = document.querySelector(".search-city-country input").value;
-  const URL = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?location=${city}`;
+  const URL = `https://jobs.github.com/positions.json?location=${city}`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => {
@@ -351,7 +351,7 @@ const searchByFilters = () => {
       location = cities[i].value;
     }
   }
-  const URLnew = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?full_time=${fullTime}&location=${location}`;
+  const URLnew = `https://jobs.github.com/positions.json?full_time=${fullTime}&location=${location}`;
   // console.log(URLnew);
   fetch(URLnew)
     .then((res) => res.json())
@@ -442,7 +442,7 @@ const searchByDescription = () => {
     `;
     page = 1;
     jobs = [];
-    const URL = `https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=${description}`;
+    const URL = `https://jobs.github.com/positions.json?description=${description}`;
     fetch(URL)
       .then((res) => res.json())
       .then((res) => {
