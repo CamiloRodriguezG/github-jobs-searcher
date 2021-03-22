@@ -581,7 +581,12 @@ const goToJob = (data) => {
       <div class="main-container">
         <div class="filter-container">
           <div>
-            <input type="checkbox" name="fulltime" id="full-time" />
+            <input
+              type="checkbox"
+              name="fulltime"
+              id="full-time"
+              onchange="searchByFilters()"
+            />
             <label for="fulltime">Full-time</label>
           </div>
           <h4>LOCATION</h4>

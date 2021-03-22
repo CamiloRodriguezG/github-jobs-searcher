@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://xenodochial-ptolemy-6e7f64.netlify.app/">
       Solution
     </a>
     <span> | </span>
@@ -36,7 +36,7 @@
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- You can see the Web site here: 
+- You can see the Web site here: https://xenodochial-ptolemy-6e7f64.netlify.app/
 - This was some difficult, the API was some difficult to fetch to me, and organize all the data. 
 - I learned more about the API's, and about positioning in CSS
 - I've made some websites similar to this, but I think I'm very junior yet. 
