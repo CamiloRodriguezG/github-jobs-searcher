@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Job Search</title>
+  </head>
+  <body>
+    <div class="no-input-err err-close">
+      <p>Opps, you didn't write nothing to search</p>
+      <button class="close-err-btn"  onclick="cerrar()"><i class="fas fa-times-circle"></i></button>
+    </div>
+    <header>
+      <h1>
+        GitHub
+        <p>Jobs</p>
+      </h1>
+    </header>
+    <section class="search-sec">
+      <div class="search-container">
+        <i class="fas fa-briefcase"></i>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Title, companies, expertise or benefits"
+        />
+        <button class="search-btn" onclick="searchByDescription()">
+          Search
+        </button>
+      </div>
+    </section>
+    <div class="main-container">
+      <div class="filter-container">
+        <div>
+          <input
+            type="checkbox"
+            name="fulltime"
+            id="full-time"
+            onchange="searchByFilters()"
+          />
+          <label for="fulltime">Full-time</label>
+        </div>
+        <h4>LOCATION</h4>
+        <div class="search-city-country">
+          <i class="fas fa-globe-americas"></i>
+          <input
+            type="text"
+            placeholder="City, state, zip code or country"
+            onchange="searchByCity()"
+          />
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="radiobutton"
+            class="radio-button-city"
+            id="london-radio"
+            value="london"
+            onchange="searchByFilters()"
+          />
+          <label for="london">London</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="radiobutton"
+            class="radio-button-city"
+            id="amsterdam-radio"
+            value="amsterdam"
+            onchange="searchByFilters()"
+          />
+          <label for="amsterdam">Amsterdam</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="radiobutton"
+            class="radio-button-city"
+            id="newyork-radio"
+            value="newyork"
+            onchange="searchByFilters()"
+          />
+          <label for="newyork">New york</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="radiobutton"
+            class="radio-button-city"
+            id="berlin-radio"
+            value="berlin"
+            onchange="searchByFilters()"
+          />
+          <label for="berlin">Berlin</label>
+        </div>
+      </div>
+      <section class="jobs-container">
+        <div class="move-buttons"></div>
+      </section>
+    </div>
+    <footer>
+      <p>
+        created by
+        <a href="https://portfolio-mu-snowy.vercel.app/" target="_blank"
+          >Camilo Rodriguez</a
+        >
+        - devChallenges.io
+      </p>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
